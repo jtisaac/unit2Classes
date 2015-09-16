@@ -14,7 +14,7 @@ public class Door
 
 
     {
-        // initialise instance variables
+        // initialise instance variables (Constructor)
         //private String name;
         this.state = state;
         this.name = name;
@@ -24,41 +24,36 @@ public class Door
      * An example of a method - replace this comment with your own
      *    that describes the operation of the method
      *
-     * @pre        preconditions for the method
-     *            (what the method assumes about the method's parameters and class's state)
+     * @pre        door has a state
+     *             
      *            
-     * @post    postconditions for the method
-     *            (what the method guarantees upon completion)
-     *            Door will be open
-     * @param   state of door
-     * @return    description of the return value
+     * 
+     * 
      */
     public void open()
     {
         // put your code here
-        state = "Open";
+        this.state = "Open";
         //do not return
     }
-
+
+
     /**
      * An example of a method - replace this comment with your own
      *  that describes the operation of the method
      *
-     * @pre     preconditions for the method
-     *          (what the method assumes about the method's parameters and class's state)
-     * @post    postconditions for the method
-     *          (what the method guarantees upon completion)
-     *          door will be closed
-     * @param   atate
-     * @return  description of the return value
+     * @pre     door has a state
+     * 
+     * @return  
      */
     public void close()
     {
         // put your code here
-        state = "Closed";
+        this.state = "Closed";
         //return Door.state;
     }
-    
+    
+
     /**
      * An example of a method - replace this comment with your own
      *  that describes the operation of the method
@@ -75,7 +70,8 @@ public class Door
         // put your code here
         return this.state;
     }
-    
+    
+
     /**
      * An example of a method - replace this comment with your own
      *  that describes the operation of the method
@@ -92,7 +88,8 @@ public class Door
         // put your code here
         return this.name;
     }
-    
+    
+
     /**
      * An example of a method - replace this comment with your own
      *  that describes the operation of the method
@@ -101,7 +98,7 @@ public class Door
      *          (what the method assumes about the method's parameters and class's state)
      * @post    postconditions for the method
      *          (what the method guarantees upon completion)
-     * @param   y   description of parameter y
+     * @param   the string that the person enters for the new name
      * @return  description of the return value
      */
     public void setName(String newName)
@@ -109,7 +106,8 @@ public class Door
         // put your code here
         this.name = newName;
     }
-    
+    
+
     /**
      * An example of a method - replace this comment with your own
      *  that describes the operation of the method
