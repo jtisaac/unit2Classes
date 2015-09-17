@@ -2,32 +2,31 @@
 
 /**
  * Write a description of class Door here.
- * 
- * @author (your name) 
- * @version (a version number or a date)
+ * a door
+ * @author (your Isaac) 
+ * @version 9/17/15
  */
 public class Door
 {
-    /** description of instance variable x (add comment for each instance variable) */
+    //These are the insance variables
     private String name; // name of door
     private String state; // open or closed
 
-
+    public Door(String name,String state)
     {
         // initialise instance variables (Constructor)
-        //private String name;
+        //THIS IS THE CONSTRUCTOR!!!>>!>
         this.state = state;
         this.name = name;
     }
 
     /**
-     * An example of a method - replace this comment with your own
-     *    that describes the operation of the method
+     * Opens the door
      *
-     * @pre        door has a state
+     * @pre        door has a state (No pre)
      *             
      *            
-     * 
+     * @post       the door will have a closed state
      * 
      */
     public void open()
@@ -39,12 +38,11 @@ public class Door
 
 
     /**
-     * An example of a method - replace this comment with your own
-     *  that describes the operation of the method
+     * Closes the door
      *
      * @pre     door has a state
      * 
-     * @return  
+     * @post the door will be closed
      */
     public void close()
     {
@@ -55,15 +53,12 @@ public class Door
     
 
     /**
-     * An example of a method - replace this comment with your own
-     *  that describes the operation of the method
+     * retrieves the state of the door
      *
-     * @pre     preconditions for the method
-     *          (what the method assumes about the method's parameters and class's state)
-     * @post    postconditions for the method
-     *          (what the method guarantees upon completion)
-     * @param   y   description of parameter y
-     * @return  description of the return value
+     * @pre     the door has a state
+     * @post    
+     * 
+     * @return  this.state
      */
     public String getState()
     {
@@ -73,15 +68,12 @@ public class Door
     
 
     /**
-     * An example of a method - replace this comment with your own
-     *  that describes the operation of the method
+     * Gets the name of the object
      *
-     * @pre     preconditions for the method
-     *          (what the method assumes about the method's parameters and class's state)
-     * @post    postconditions for the method
-     *          (what the method guarantees upon completion)
-     * @param   y   description of parameter y
-     * @return  description of the return value
+     * @pre     the object has a name
+     * 
+     * 
+     * @return  this.name
      */
     public String getName()
     {
@@ -91,15 +83,13 @@ public class Door
     
 
     /**
-     * An example of a method - replace this comment with your own
-     *  that describes the operation of the method
+     * Takes in a new name
      *
-     * @pre     preconditions for the method
-     *          (what the method assumes about the method's parameters and class's state)
-     * @post    postconditions for the method
-     *          (what the method guarantees upon completion)
+     * @pre     the object has a name
+     * 
+     * @post    the object will have the new name
      * @param   the string that the person enters for the new name
-     * @return  description of the return value
+     * 
      */
     public void setName(String newName)
     {
@@ -109,15 +99,13 @@ public class Door
     
 
     /**
-     * An example of a method - replace this comment with your own
-     *  that describes the operation of the method
+     * Sets the state of the object
      *
-     * @pre     preconditions for the method
-     *          (what the method assumes about the method's parameters and class's state)
-     * @post    postconditions for the method
-     *          (what the method guarantees upon completion)
-     * @param   y   description of parameter y
-     * @return  description of the return value
+     * @pre     the class has a state
+     * @post    the state of the door will be changed to the param
+     *          
+     * @param   string of new state
+     * 
      */
     public void setState(String newState)
     {
