@@ -49,6 +49,13 @@ public class Vending_MachineTest
     {
         Vending_Machine andrew = new Vending_Machine();
         andrew.fillUp(10);
-        assertEquals(20, andrew.getTokenCount());
+        assertEquals(20, andrew.getCanCount());
+    }
+    @Test
+    public void testInsertToken()
+    {
+     Vending_Machine andrew = new Vending_Machine();
+     andrew.insertToken( 10 );
+     assertEquals(10, andrew.getTokenCount());
     }
 }
