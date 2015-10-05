@@ -6,16 +6,17 @@ import java.util.Scanner;
  * @author (your name) 
  * @version (a version number or a date)
  */
-public class formatter
+public class Formatterpseudocode1 
 {
 
-    public void main()
+    public static void main(String[] args)
     {
         Scanner s = new Scanner(System.in);
-        int num = s.nextInt();
-        int first = num.substring(0,4);
-        int second = num.substring(3,7);
-        int third = num.substring(6,10);
+        System.out.print("Please enter a number: ");
+        String num = s.next();
+        String first = num.substring(0,4);
+        String second = num.substring(3,7);
+        String third = num.substring(6,10);
         String tot = "(" + first + ")" + second + "-" + third;
         System.out.println(tot);
     }

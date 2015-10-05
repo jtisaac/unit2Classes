@@ -3,8 +3,8 @@ import javax.swing.JFrame;
 /**
  * Class that contains the main method for the program and creates the frame containing the component.
  * 
- * @author @gcschmit
- * @version 18 July 2014
+ * @Jisaac @gcschmit
+ * @version 10 2 2015
  */
 public class CityscapeViewer
 {
@@ -23,7 +23,8 @@ public class CityscapeViewer
         frame.setSize(800 /* x */, 600 /* y */);
         frame.setTitle("Cityscape");
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        
+        //frame.getWidth();
+        //frame.getHeight();
         // use the Scanner class to prompt the user for some configurable aspect of the cityscape
         // ...
         
