@@ -6,22 +6,12 @@ import javax.swing.JComponent;
 /**
  * This component draws a target shape
  * 
- * @author (your name) 
- * @version (a version number or a date)
+ * @author (your josephname) 
+ * @version (a version 1`0 5 15number or a date)
  */
 public class TargetComponent extends JComponent
 {
-    /** description of instance variable x (add comment for each instance variable) */
-    
-
-    /**
-     * Default constructor for objects of class TargetComponent
-     */
-    public TargetComponent()
-    {
-        // initialise instance variables
-        
-    }
+   
 
     /**
      * An example of a method - replace this comment with your own
@@ -37,15 +27,12 @@ public class TargetComponent extends JComponent
     public void paintComponent(Graphics g)
     {
         Graphics2D g2 = (Graphics2D) g;
-        Target andrew = new Target(0,0);
+        Target NowsTheTimeHereIsThePlace = new Target(0,0);
         
-        int x = getWidth() - 60;
-        int y = getHeight() - 30;
-        
-        Target tony = new Target(x,y);
-        
-        andrew.draw(g2);
-        tony.draw(g2);
+
+        //big.draw(g2);
+        //medium.draw(g2);
+        NowsTheTimeHereIsThePlace.draw(g2);
     }
 }
         

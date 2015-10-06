@@ -1,40 +1,30 @@
-
+import javax.swing.JFrame;
 
 /**
  * Write a description of class TargetViewer here.
- * 
- * @author (your name) 
- * @version (a version number or a date)
+ * Displays the Target
+ * @author (Joseph Isaac) 
+ * @version (10 5 15)
  */
 public class TargetViewer
 {
-    /** description of instance variable x (add comment for each instance variable) */
-    private int x;
 
     /**
-     * Default constructor for objects of class TargetViewer
-     */
-    public TargetViewer()
-    {
-        // initialise instance variables
-        x = 0;
-    }
-
-    /**
-     * An example of a method - replace this comment with your own
-     *    that describes the operation of the method
+     * This method displays the Target
      *
-     * @pre        preconditions for the method
-     *            (what the method assumes about the method's parameters and class's state)
-     * @post    postconditions for the method
-     *            (what the method guarantees upon completion)
-     * @param    y    description of parameter y
-     * @return    description of the return value
+
      */
-    public int sampleMethod(int y)
+    public static void main(String[] args)
     {
-        // put your code here
-        return x+y;
+        JFrame frame = new JFrame();
+        frame.setSize(300,400);
+        frame.setTitle("Two cars");
+        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        
+        TargetComponent component = new TargetComponent();
+        frame.add(component);
+        
+        frame.setVisible(true);
     }
 
 }

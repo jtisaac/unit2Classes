@@ -1,6 +1,7 @@
 import java.awt.Graphics2D;
 import java.awt.Rectangle;
 import java.awt.geom.Line2D;
+import java.awt.geom.Ellipse2D;
 
 
 
@@ -21,21 +22,25 @@ public class Target
     public Target(int x, int y)
     {
         
-        xLeft = x;
-        yTop = y;
+        xLeft = x;//top left
+        yTop = y;//top left
     }
 
     /**
      * Draws the Target.
-     * @pre        preconditions for the method
-     *            (what the method assumes about the method's parameters and class's state)
-     * @post    postconditions for the method
-     *            (what the method guarantees upon completion)
-     * @param    g2 the graphics content
-     * @return    description of the return value
+
+     * @param    g2- the graphics content
+
      */
     public void draw(Graphics2D g2)
     {
+        
+        Ellipse2D.Double big = new Ellipse2D.Double(xLeft,yTop,100,100);
+        g2.draw(big);
+        Ellipse2D.Double medium = new Ellipse2D.Double(xLeft+25,yTop+25,50,50);
+        g2.draw(medium);
+        Ellipse2D.Double small = new Ellipse2D.Double(xLeft+40,yTop+40,20,20);
+        g2.draw(small);
         //Rectangle body = new Rectangle(xLeft, yTop +10,60,10);
         //Ellipse2D.Double 
         //return x+y;

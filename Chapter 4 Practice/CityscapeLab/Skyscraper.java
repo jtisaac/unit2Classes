@@ -10,20 +10,14 @@ import java.util.Random;
 public class Skyscraper
 {
     
-    private int x; //x int
-    private int y; // y int
-    private int width; // width in x length
-    private int height; // length of the height
+    
     private int amount; //amount of buildings
     /**
      * Default constructor for objects of class Skyscraper
      */
-    public Skyscraper(int topx , int topy , int botx , int boty)
+    public Skyscraper(int amount)
     {
-        x = topx;
-        y = topy;
-        width = botx;
-        height = boty;
+        this.amount  = amount;
     }
 
      /**
@@ -39,14 +33,17 @@ public class Skyscraper
     public void makeScrape(Graphics2D g2)
     {
         int rep = 0;
-        while (rep <= amount){
+        while (rep <= this.amount){
         Random Rightlen = new Random();
-        int right = Rightlen.nextInt(60);
-        int up = right*2;
-        Rectangle Skyber = new Rectangle();
-        rep += 1;
+        int len = Rightlen.nextInt(60);
+        int up = len*2;
+        if (up > 600){
+            up = 580
         
+        
+        }
+        
+        Rectangle Skyber = new Rectangle(x,y,100,200);
+        rep += 1;
     }
-
-}
 }
