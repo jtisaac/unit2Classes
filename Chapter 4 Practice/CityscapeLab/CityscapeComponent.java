@@ -28,11 +28,16 @@ public class CityscapeComponent extends JComponent
     public void paintComponent(Graphics g)
     {
         Graphics2D g2 = (Graphics2D) g;
-        
+        Skyscraper skyWord = new Skyscraper(10000);
         // invoke the draw method on each object in your Cityscape
         // ...
+<<<<<<< HEAD
         ///Skyscraper Skyber = new Skyscraper(100, 100, 100, 100, 100);
         ///adding more////
+=======
+        skyWord.draw(g2);
+        
+>>>>>>> origin/master
     }
     
     /**

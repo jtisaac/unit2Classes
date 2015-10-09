@@ -2,13 +2,25 @@
 dependency1.from=CityscapeViewer
 dependency1.to=CityscapeComponent
 dependency1.type=UsesDependency
+dependency2.from=CityscapeComponent
+dependency2.to=Skyscraper
+dependency2.type=UsesDependency
 objectbench.height=100
+<<<<<<< HEAD
 objectbench.width=668
 package.editor.height=400
 package.editor.width=560
 package.editor.x=1084
 package.editor.y=264
 package.numDependencies=1
+=======
+objectbench.width=658
+package.editor.height=477
+package.editor.width=560
+package.editor.x=698
+package.editor.y=48
+package.numDependencies=2
+>>>>>>> origin/master
 package.numTargets=6
 package.showExtends=true
 package.showUses=true
@@ -30,10 +42,17 @@ target1.typeParameters=
 target1.width=130
 target1.x=70
 target1.y=10
+<<<<<<< HEAD
 target2.editor.height=1001
 target2.editor.width=1920
 target2.editor.x=926
 target2.editor.y=72
+=======
+target2.editor.height=1010
+target2.editor.width=840
+target2.editor.x=840
+target2.editor.y=0
+>>>>>>> origin/master
 target2.height=50
 target2.name=Skyscraper
 target2.showInterface=false
@@ -66,10 +85,17 @@ target5.typeParameters=
 target5.width=80
 target5.x=10
 target5.y=190
+<<<<<<< HEAD
 target6.editor.height=700
 target6.editor.width=900
 target6.editor.x=592
 target6.editor.y=282
+=======
+target6.editor.height=1026
+target6.editor.width=1696
+target6.editor.x=-8
+target6.editor.y=-8
+>>>>>>> origin/master
 target6.height=50
 target6.name=CityscapeComponent
 target6.naviview.expanded=false
