@@ -11,25 +11,19 @@ import java.util.Scanner;
  */
 public class Skyscraper
 {
-<<<<<<< HEAD
-    
-    
-    private int amount; //amount of buildings
-=======
     private int number; //amount of buildings
->>>>>>> origin/master
+
     /**
      * Default constructor for objects of class Skyscraper
      */
     public Skyscraper(int amount)
     {
-<<<<<<< HEAD
-        this.amount  = amount;
-=======
 
-        this.number = amount;
->>>>>>> origin/master
+       number  = amount;
     }
+
+
+
 
      /**
      * Make a painting of skyscrapers
@@ -45,23 +39,9 @@ public class Skyscraper
     {
         Scanner ajsouhrada = new Scanner(System.in);
         int rep = 0;
-<<<<<<< HEAD
-        while (rep <= this.amount){
-        Random Rightlen = new Random();
-        int len = Rightlen.nextInt(60);
-        int up = len*2;
-        if (up > 600){
-            up = 580
-        
-        
-        }
-        
-        Rectangle Skyber = new Rectangle(x,y,100,200);
-        rep += 1;
-    }
-=======
+
         int right_adjust = 0;
-         Random Rightlen = new Random(2);
+        Random Rightlen = new Random(2);
         while (rep <= number){
         
        
@@ -81,5 +61,5 @@ public class Skyscraper
       rep += 1;
     }
    }
->>>>>>> origin/master
+
 }

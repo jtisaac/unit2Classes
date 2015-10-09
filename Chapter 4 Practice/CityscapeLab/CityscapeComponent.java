@@ -31,13 +31,11 @@ public class CityscapeComponent extends JComponent
         Skyscraper skyWord = new Skyscraper(10000);
         // invoke the draw method on each object in your Cityscape
         // ...
-<<<<<<< HEAD
-        ///Skyscraper Skyber = new Skyscraper(100, 100, 100, 100, 100);
-        ///adding more////
-=======
+
+
         skyWord.draw(g2);
         
->>>>>>> origin/master
+
     }
     
     /**
