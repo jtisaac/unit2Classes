@@ -68,7 +68,7 @@ public class Cloud
      * @param    y    description of parameter y
      * @return    description of the return value
      */
-    public void move(Graphics2D g2)
+    public void move()
     {
         Ellipse2D.Double maxymilian = new Ellipse2D.Double(xstart+5,ystart-2.5, xend+5, yend+2.5);
     }

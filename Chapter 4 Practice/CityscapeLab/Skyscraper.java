@@ -14,14 +14,16 @@ public class Skyscraper
     private int number; //amount of buildings
     private int x;
     private int y;
+    private int boi;
     /**
      * Default constructor for objects of class Skyscraper
      */
-    public Skyscraper(int amount)
+    public Skyscraper(int amount,int randnum)
     {
        x = 800;
        y = 600;
        number = amount;
+       boi = randnum;
     }
 
      /**
@@ -36,9 +38,9 @@ public class Skyscraper
      */
     public void draw(Graphics2D g2)
     {
-        Scanner ajsouhrada = new Scanner(System.in);
-        System.out.println("Please enter a random integer: ");
-        int boi = ajsouhrada.nextInt();
+        //Scanner ajsouhrada = new Scanner(System.in);
+        //System.out.println("Please enter a random integer: ");
+        //int boi = ajsouhrada.nextInt();
         int rep = 0;
      
         int right_adjust = 0;

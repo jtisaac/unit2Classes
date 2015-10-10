@@ -13,15 +13,20 @@ public class CityscapeComponent extends JComponent
 {
     // define the objects in your Cityscape as instance variables
     // ...
-    Skyscraper skyWord = new Skyscraper(10);
-    Sun land_of_the_rising_sun = new Sun(60);
-    Cloud gavriles = new Cloud(3);
     
-    
+    Sun land_of_the_rising_sun; 
+    Cloud gavriles; 
+    Skyscraper skyWord;// comes from the other class!!!! how do i do this?
+    //Graphics2D g2 = (Graphics2D) g;
     
     // define the CityscapeComponent contructor and intiailize all instance variables
     // ...
-    
+    public CityscapeComponent(int random)
+    {
+     land_of_the_rising_sun = new Sun(60);
+     gavriles = new Cloud(1);
+     skyWord = new Skyscraper(10,random);// comes from the other class!!!! how do i do this?
+    }
     
     /**
      * This method is invoked by the Java Run-Time whenever the component needs to be redrawn.
@@ -31,6 +36,7 @@ public class CityscapeComponent extends JComponent
     public void paintComponent(Graphics g)
     {
         Graphics2D g2 = (Graphics2D) g;
+    
         
         // invoke the draw method on each object in your Cityscape
         // ...
@@ -51,7 +57,7 @@ public class CityscapeComponent extends JComponent
         // update the objects in the cityscape so they are animated
         // ...
             
-        //gavriles.move(g);
+        gavriles.move();
         
         // request that the Java Runtime repaints this component by invoking its paintComponent method
         repaint();
