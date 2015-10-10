@@ -13,6 +13,9 @@ public class CityscapeComponent extends JComponent
 {
     // define the objects in your Cityscape as instance variables
     // ...
+    Skyscraper skyWord = new Skyscraper(10);
+    Sun land_of_the_rising_sun = new Sun(60);
+    Cloud gavriles = new Cloud(3);
     
     
     
@@ -28,13 +31,14 @@ public class CityscapeComponent extends JComponent
     public void paintComponent(Graphics g)
     {
         Graphics2D g2 = (Graphics2D) g;
-        Skyscraper skyWord = new Skyscraper(10000);
+        
         // invoke the draw method on each object in your Cityscape
         // ...
-
-
-        skyWord.draw(g2);
         
+        
+        land_of_the_rising_sun.draw(g2);
+        skyWord.draw(g2);
+        gavriles.draw(g2);
 
     }
     
@@ -46,8 +50,8 @@ public class CityscapeComponent extends JComponent
     {
         // update the objects in the cityscape so they are animated
         // ...
-        
-        
+            
+        //gavriles.move(g);
         
         // request that the Java Runtime repaints this component by invoking its paintComponent method
         repaint();
