@@ -16,7 +16,8 @@ public class CityscapeComponent extends JComponent
     
     Sun land_of_the_rising_sun; 
     Cloud gavriles; 
-    Skyscraper skyWord;// comes from the other class!!!! how do i do this?
+    Skyscraper skyWord;
+    Skyscraper lastScrape;// comes from the other class!!!! how do i do this?
     //Graphics2D g2 = (Graphics2D) g;
     
     // define the CityscapeComponent contructor and intiailize all instance variables
@@ -25,7 +26,8 @@ public class CityscapeComponent extends JComponent
     {
      land_of_the_rising_sun = new Sun(60);
      gavriles = new Cloud(1);
-     skyWord = new Skyscraper(10,random, xlength, ylength);// comes from the other class!!!! how do i do this?
+     skyWord = new Skyscraper(10,random, xlength, ylength);
+     lastScrape = new Skyscraper(5,random+1, xlength+10, ylength+5);// comes from the other class!!!! how do i do this?
     }
     
     /**
@@ -44,8 +46,9 @@ public class CityscapeComponent extends JComponent
         
         land_of_the_rising_sun.draw(g2);
         skyWord.draw(g2);
+        
+        lastScrape.draw(g2);
         gavriles.draw(g2);
-
     }
     
     /**
