@@ -6,14 +6,14 @@ import java.awt.geom.Ellipse2D;
 
 /**
  * Write a description of class Sun here.
- * 
- * @author (your name) 
- * @version (a version number or a date)
+ * This is a sun
+ * @author (Joseph Isaac) 
+ * @version (oct 10)
  */
 public class Sun
 {
     /** description of instance variable x (add comment for each instance variable) */
-    private int radius;
+    private int radius; //the radius of the Sun
 
     /**
      * Default constructor for objects of class Sun
@@ -25,21 +25,16 @@ public class Sun
     }
 
     /**
-     * An example of a method - replace this comment with your own
-     *    that describes the operation of the method
+     * Draws the sun
      *
-     * @pre        preconditions for the method
-     *            (what the method assumes about the method's parameters and class's state)
-     * @post    postconditions for the method
-     *            (what the method guarantees upon completion)
-     * @param    y    description of parameter y
-     * @return    description of the return value
+     * 
+     * @param    Graphics2D g2
      */
     public void draw(Graphics2D g2)
     {
-        Ellipse2D.Double sunnycha = new Ellipse2D.Double(0,0,radius*2,radius*2);
+        Ellipse2D.Double sunchers = new Ellipse2D.Double(0,0,radius*2,radius*2);
         g2.setColor(Color.YELLOW);
-        g2.fill(sunnycha);
+        g2.fill(sunchers);
     }
 
 }

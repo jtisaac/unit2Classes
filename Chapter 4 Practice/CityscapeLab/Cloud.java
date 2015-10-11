@@ -6,7 +6,7 @@ import java.awt.geom.Ellipse2D;
 
 /**
  * Write a description of class Cloud here.
- * 
+ * A cloud that has the ability to move
  * @author (Joseph Isaac) 
  * @version (oct 10)
  */
@@ -31,7 +31,7 @@ public class Cloud
         yend = 150;// initialise instance variables
         currentx = 100;
     }
-    Ellipse2D.Double maxymilian = new Ellipse2D.Double(xstart,ystart, xend, yend);
+    Ellipse2D.Double maxymilian = new Ellipse2D.Double(xstart,ystart, xend, yend); //making the ellipse
     /**
      * draws the cloud
      * @param    graphics2D g2
@@ -53,7 +53,7 @@ public class Cloud
     public void moveandupdate()
     {
         double theX = maxymilian.getX();
-        currentx = (int) theX;
+        currentx = (int) theX; //casting
         maxymilian.setFrame(currentx+5,ystart, currentx+205, yend);
     }
 }

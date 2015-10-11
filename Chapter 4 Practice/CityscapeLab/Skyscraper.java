@@ -5,7 +5,7 @@ import java.awt.Color;
 import java.util.Scanner;
 /**
  * Write a description of class Skyscraper here.
- * This will be a steriotypical skyscraper
+ * This will be a steriotypical collection of skyscrapers
  * @JTIsaac  
  * @version (10/5/2015)
  */
@@ -62,7 +62,7 @@ public class Skyscraper
          right_adjust += right;
          rep += 1;
     }
-    rep = 0;
+    rep = 0;//resetting for an extra layer of skyscrapers
     right_adjust = 0;
     while (rep <= number){
          int right = Rightlen.nextInt(50);
