@@ -21,11 +21,11 @@ public class CityscapeComponent extends JComponent
     
     // define the CityscapeComponent contructor and intiailize all instance variables
     // ...
-    public CityscapeComponent(int random)
+    public CityscapeComponent(int random, int xlength, int ylength)
     {
      land_of_the_rising_sun = new Sun(60);
      gavriles = new Cloud(1);
-     skyWord = new Skyscraper(10,random);// comes from the other class!!!! how do i do this?
+     skyWord = new Skyscraper(10,random, xlength, ylength);// comes from the other class!!!! how do i do this?
     }
     
     /**
@@ -57,7 +57,7 @@ public class CityscapeComponent extends JComponent
         // update the objects in the cityscape so they are animated
         // ...
             
-        gavriles.move();
+        gavriles.moveandupdate();
         
         // request that the Java Runtime repaints this component by invoking its paintComponent method
         repaint();

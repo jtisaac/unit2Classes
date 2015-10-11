@@ -7,18 +7,18 @@ import java.awt.geom.Ellipse2D;
 /**
  * Write a description of class Cloud here.
  * 
- * @author (your name) 
- * @version (a version number or a date)
+ * @author (Joseph Isaac) 
+ * @version (oct 10)
  */
 public class Cloud
 {
-    /** description of instance variable x (add comment for each instance variable) */
-    private int number;
-    private int xstart;
-    private int ystart;
-    private int xend;
-    private int yend;
-
+    
+    private int number; // number of clouds
+    private int xstart; // x top left starting coordinate
+    private int ystart; // y top left start coord
+    private int xend; // x bot right coord
+    private int yend; // y bot right coord
+    private int currentx;// current x coord
     /**
      * Default constructor for objects of class Clouds
      */
@@ -29,48 +29,32 @@ public class Cloud
         ystart = 100;
         xend = 300;
         yend = 150;// initialise instance variables
+        currentx = 100;
     }
-
+    Ellipse2D.Double maxymilian = new Ellipse2D.Double(xstart,ystart, xend, yend);
     /**
-     * An example of a method - replace this comment with your own
-     *    that describes the operation of the method
-     *
-     * @pre        preconditions for the method
-     *            (what the method assumes about the method's parameters and class's state)
-     * @post    postconditions for the method
-     *            (what the method guarantees upon completion)
-     * @param    y    description of parameter y
-     * @return    description of the return value
+     * draws the cloud
+     * @param    graphics2D g2
+    
      */
     public void draw(Graphics2D g2)
     {
-        int rep = 0;
-        while(rep <= number){// put 
-        int iteration = 0;
-         while (iteration < 8){
-         Ellipse2D.Double maxymilian = new Ellipse2D.Double(xstart,ystart, xend, yend);
+        
+         
          g2.setColor(Color.GRAY);
          g2.fill(maxymilian);
        
-         iteration += 1;
-        }
-        rep += 1;
+
        }
-    }
+    
     /**
-     * An example of a method - replace this comment with your own
-     *    that describes the operation of the method
-     *
-     * @pre        preconditions for the method
-     *            (what the method assumes about the method's parameters and class's state)
-     * @post    postconditions for the method
-     *            (what the method guarantees upon completion)
-     * @param    y    description of parameter y
-     * @return    description of the return value
+    this method moves the cloud object
      */
-    public void move()
+    public void moveandupdate()
     {
-        Ellipse2D.Double maxymilian = new Ellipse2D.Double(xstart+5,ystart-2.5, xend+5, yend+2.5);
+        double theX = maxymilian.getX();
+        currentx = (int) theX;
+        maxymilian.setFrame(currentx+5,ystart, currentx+205, yend);
     }
 }
 

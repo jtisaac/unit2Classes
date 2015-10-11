@@ -12,37 +12,29 @@ import java.util.Scanner;
 public class Skyscraper
 {
     private int number; //amount of buildings
-    private int x;
-    private int y;
-    private int boi;
+    private int x; // the start x
+    private int y; // the start y
+    private int boi; // the random number (parameter)
     /**
      * Default constructor for objects of class Skyscraper
      */
-    public Skyscraper(int amount,int randnum)
+    public Skyscraper(int amount,int randnum, int xlength, int ylength)
     {
-       x = 800;
-       y = 600;
+       x = xlength;
+       y = ylength;
        number = amount;
        boi = randnum;
     }
 
      /**
-     * Make a painting of skyscrapers
-     *
-     * @pre        preconditions for the method
-     *            (what the method assumes about the method's parameters and class's state)
-     * @post    postconditions for the method
-     *            (what the method guarantees upon completion)
-     * @param   vandrew   
-     * @return    description of the return value
+     * Make a drawing of skyscrapers
+
+     * @param   Graphics2D g2
+
      */
     public void draw(Graphics2D g2)
     {
-        //Scanner ajsouhrada = new Scanner(System.in);
-        //System.out.println("Please enter a random integer: ");
-        //int boi = ajsouhrada.nextInt();
         int rep = 0;
-     
         int right_adjust = 0;
         Random Rightlen = new Random(boi);
         while (rep <= number){
@@ -50,7 +42,7 @@ public class Skyscraper
          right += 50;
   
          int up = right*2;
-         if (up > 700){
+         if (up > y-100){
             up = 700;
          }
         
@@ -69,9 +61,34 @@ public class Skyscraper
             g2.fill(skyber);
          right_adjust += right;
          rep += 1;
-       
-   
-
+    }
+    rep = 0;
+    right_adjust = 0;
+    while (rep <= number){
+         int right = Rightlen.nextInt(50);
+         right += 10;
+  
+         int up = right*2;
+         right+= 30;
+         if (up > y-100){
+            up = 700;
+         }
+        
+         if (rep == 0){
+           Rectangle skyber = new Rectangle(0,up,right,y); 
+        
+         }
+         Rectangle skyber = new Rectangle(right_adjust,up,right,y); 
+         g2.draw(skyber);
+         if ( rep%2 == 0){
+             g2.setColor(Color.BLUE);
+            }
+         else{
+             g2.setColor(Color.BLACK);
+            }
+            g2.fill(skyber);
+         right_adjust += right;
+         rep += 1;
     }
    }
 }
